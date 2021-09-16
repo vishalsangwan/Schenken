@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "722430977409",
+    "project_id": "verschenken-545f8",
+    "storage_bucket": "verschenken-545f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722430977409:android:9a4c512c201cb27b3db480",
+        "android_client_info": {
+          "package_name": "com.example.vershenken"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "722430977409-cn5a0u1oh738mh65bmu09l8vpg9antg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7AKal_-vw_59GsVseuN0uSBbJ1FXo7dg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "722430977409-cn5a0u1oh738mh65bmu09l8vpg9antg6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

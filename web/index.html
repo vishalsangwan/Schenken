@@ -33,6 +33,35 @@
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+  <html>
+  ...
+  <body>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+
+
+    <!-- Firebase Configuration -->
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyB6Osgjn6rvmAseIToSTLbncbG_AXjqSwA",
+        authDomain: "verschenken-545f8.firebaseapp.com",
+        projectId: "verschenken-545f8",
+        storageBucket: "verschenken-545f8.appspot.com",
+        messagingSenderId: "722430977409",
+        appId: "1:722430977409:web:04afe4a94e658d7c3db480",
+        measurementId: "G-LE74D6KQCC",
+      };
+      
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="main.dart.js" type="application/javascript"></script>
+  </body>
+</html>
   <script>
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
