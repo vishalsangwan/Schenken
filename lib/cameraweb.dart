@@ -120,7 +120,7 @@ class _WebCamState extends State<WebCam> {
       body: Stack(
         children: [
           Container(
-              child: new HtmlElementView(
+              child: HtmlElementView(
             key: UniqueKey(),
             viewType: 'webcamVideoElement',
           )),
