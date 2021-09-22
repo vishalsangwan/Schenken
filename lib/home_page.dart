@@ -1,7 +1,7 @@
 
 
 import 'dart:io';
-import 'package:firebase_core/firebase_core.dart';
+//import 'package:firebase_core/firebase_core.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:vershenken/product_detail_page.dart';
 import 'package:flutter/material.dart';
@@ -31,10 +31,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
   void _openCamera(BuildContext context) async {
   final pickedFile = await ImagePicker().getImage(
     source: ImageSource.camera,
+    imageQuality: 30
   );
   _imageFile =  File(pickedFile!.path);
     await firebase_storage.FirebaseStorage.instance
-        .ref('/fromcamera.png')
+        .ref((DateTime.now()).toString())
         .putFile(_imageFile);
 setState(() {
   _value=widget.allImages();
@@ -101,13 +102,17 @@ setState(() {
                         child:
                             Column(mainAxisSize: MainAxisSize.max, children: [
                           Expanded(
+                            flex: 4,
                             child: Image.network(
                               i,
                               fit: BoxFit.fitWidth,
                             ),
                           ),
-                          const Text(
-                            'Location',
+                          Expanded(
+                            flex:1,
+                            child: Text(
+                              i.toString(),
+                            ),
                           ),
                         ]),
                       )));
